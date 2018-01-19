@@ -1,0 +1,93 @@
+body{
+	font-size: 14pt;
+	font-weight: bold;
+}
+
+span
+{
+	color: gray;
+}
+
+.main 
+{
+	float: left;
+	width: 2000px;
+	overflow: hidden;
+}
+
+.broker 
+{
+	padding-top: 250px;
+	float: left;
+	height: 100%;
+	width: 210px;
+}
+
+.serivces
+{
+	float: left;
+	width: 210px;
+}
+
+.queues 
+{
+	float: left;
+	width: 1000px;
+}
+
+.count
+{
+	font-weight: bold;
+	padding-left: 20px;
+	color: black;
+}
+
+.textQueue
+{
+	width: 1000px;
+	height: 100px;
+	overflow: hidden;
+}
+
+#initialQueueSize
+{
+	width: 60px;
+	margin-left: 5px;
+	font-weight: bold;
+
+}
+
+.threadCount
+{
+	width: 30px;
+	margin-left: 5px;
+	font-weight: bold;
+}
+
+
+select, input[type="text"]
+{
+	background-color: lightyellow;
+}
+
+.btn
+{
+	font-weight: bold;
+	width: 80px;
+	background-color: lightgreen;
+}
+
+.btn:disabled	
+{
+	background-color: silver;
+}
+
+#totalTickCount
+{	
+	color: black;
+}
+
+.paused
+{
+	background-color: yellow;/* !important; */
+}

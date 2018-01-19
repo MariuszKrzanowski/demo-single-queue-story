@@ -1,0 +1,136 @@
+<html>
+
+<head>
+	<title>Historia jednej kolejki - DEMO</title>
+	<meta charset="utf-8" />
+	<script src="js/jquery-2.1.4.js"></script>
+	<script src="js/app.js"></script>
+	<link rel="stylesheet" href="css/main.css" type="text/css" />
+</head>
+
+<body>
+	<div class="main">
+		<div class="timerSpeed">
+			<span>Speed</span>
+			<select id="timerSpeed">
+				<option value="1000">Slow</option>
+				<option value="100">Medium</option>
+				<option value="10">Fast</option>
+			</select>
+
+			<span>Demo type</span>
+			<select id="demoType">
+				<option value="showBusyOnly">Busy status only</option>
+				<option value="showBusyAndSaga">Busy plus SAGA</option>
+				<option value="showQueueSize">Work and Queue Size</option>
+				<option value="showQueDetails">Detailed view</option>
+			</select>
+			<span>Input message batch count:</span>
+			<input type="text" value="300" id="initialQueueSize" />
+
+			<input type="button" value="start" class="btn btn-start" />
+			<input type="button" value="stop" class="btn btn-stop" />
+			<input type="button" value="pause" class="btn btn-pause" />
+			<span>Total tick count:</span>
+			<span id="totalTickCount">0</span>
+
+		</div>
+	</div>
+	<div class="main">
+		<div class="broker">
+			<img src="img/broker.png" />
+			<div>
+				<span>Thread count</span>
+				<input type="text" value="5" class="threadCount" />
+			</div>
+			<div class="queue">
+				<span>Queue count:</span>
+				<span class="count">0</span>
+			</div>
+			<div class="saga">
+				<span>SAGA count:</span>
+				<span class="count">0</span>
+			</div>
+		</div>
+		<div class="serivces">
+			<div class="service" inputQueueName="A">
+				<img src="img/service.png" />
+				<div>
+					<span>Thread count</span>
+					<input type="text" value="1" class="threadCount" />
+				</div>
+				<div class="queue">
+					<span>Queue count:</span>
+					<span class="count">0</span>
+				</div>
+			</div>
+			<div class="service" inputQueueName="B">
+				<img src="img/service.png" />
+				<div>
+					<span>Thread count</span>
+					<input type="text" value="1" class="threadCount" />
+				</div>
+				<div class="queue">
+					<span>Queue count:</span>
+					<span class="count">0</span>
+				</div>
+			</div>
+			<div class="service" inputQueueName="C">
+				<img src="img/service.png" />
+				<div>
+					<span>Thread count</span>
+					<input type="text" value="1" class="threadCount" />
+				</div>
+				<div class="queue">
+					<span>Queue count:</span>
+					<span class="count">0</span>
+				</div>
+			</div>
+			<div class="service" inputQueueName="D">
+				<img src="img/service.png" />
+				<div>
+					<span>Thread count</span>
+					<input type="text" value="1" class="threadCount" />
+				</div>
+				<div class="queue">
+					<span>Queue count:</span>
+					<span class="count">0</span>
+				</div>
+			</div>
+		</div>
+		<div class="queues">
+			<div class="textQueue brokerQueue">
+				<b>Broker: </b>
+				<br/>
+				<span></span>
+			</div>
+			<hr/>
+			<div class="textQueue serviceQueue" inputQueueName="A">
+				<b>Service A:</b>
+				<br/>
+				<span></span>
+			</div>
+			<hr/>
+			<div class="textQueue serviceQueue" inputQueueName="B">
+				<b>Service B: </b>
+				<br/>
+				<span></span>
+			</div>
+			<hr/>
+			<div class="textQueue serviceQueue" inputQueueName="C">
+				<b>Service C: </b>
+				<br/>
+				<span></span>
+			</div>
+			<hr/>
+			<div class="textQueue serviceQueue" inputQueueName="D">
+				<b>Service D: </b>
+				<br/>
+				<span></span>
+			</div>
+
+		</div>
+	</div>
+</body>
+
+</html>
